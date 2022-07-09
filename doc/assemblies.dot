@@ -1,0 +1,41 @@
+## Graphviz dot diagram of assemblies and parts in the model.
+
+digraph asm {
+# Node list
+asm_main [label="asm_main"]
+asm_front_shell [label="asm_front_shell"]
+asm_clock_hands [label="asm_clock_hands"]
+clock_face [label="clock_face"]
+hand_alarm [label="hand_alarm"]
+hand_hour [label="hand_hour"]
+hand_minute [label="hand_minute"]
+hand_seconds [label="hand_seconds"]
+shell_front [label="shell_front"]
+front_glass [label="front_glass"]
+asm_back_shell [label="asm_back_shell"]
+shell_back [label="shell_back"]
+asm_battery_container [label="asm_battery_container"]
+battery_container [label="battery_container"]
+battery_contact_minus [label="battery_contact_minus"]
+battery_contact_plus [label="battery_contact_plus"]
+battery_aa [label="battery_aa"]
+asm_wheel [label="asm_wheel"]
+wheel [label="wheel"]
+wheel_axis [label="wheel_axis"]
+clock_inner [label="clock_inner"]
+alarm_button [label="alarm_button"]
+asm_back_lid [label="asm_back_lid"]
+back_lid [label="back_lid"]
+back_lid_foam [label="back_lid_foam"]
+
+# Edges
+asm_main -> {asm_front_shell asm_back_shell}
+asm_front_shell -> {asm_clock_hands shell_front front_glass}
+asm_clock_hands -> {clock_face hand_alarm hand_hour hand_minute hand_seconds}
+asm_back_shell -> {shell_back asm_battery_container asm_wheel clock_inner
+                   alarm_button asm_back_lid}
+asm_battery_container -> {battery_container battery_contact_minus
+                          battery_contact_plus battery_aa}
+asm_wheel -> {wheel wheel_axis}
+asm_back_lid -> {back_lid back_lid_foam}
+}
