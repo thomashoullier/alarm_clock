@@ -5,3 +5,7 @@ authors:
 title: "CAD modeling of an alarm clock using FreeCAD."
 date-released: 2022-07-09
 url: "https://github.com/thomashoullier/alarm_clock"
+keywords:
+  - "cad"
+  - "freecad"
+license: CC-BY-4.0
