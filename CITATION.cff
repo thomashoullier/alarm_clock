@@ -1,0 +1,7 @@
+authors:
+- family-names: "Houllier"
+  given-names: "Thomas"
+  orcid: "https://orcid.org/0000-0002-8404-7177"
+title: "CAD modeling of an alarm clock using FreeCAD."
+date-released: 2022-07-09
+url: "https://github.com/thomashoullier/alarm_clock"
